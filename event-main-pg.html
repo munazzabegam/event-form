@@ -9,149 +9,288 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     
-    <!-- font awesome  -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Document</title>
+    
+    <title>Events</title>
     <style>
-        .main-title {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        .event-main-title {
-            padding: 20px;
-        }
-        .row {
-            display: flex;
-            justify-content: center;
-        }
-        .card{
-            margin: 28px
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        background-color: #000000;
+        height: 80px;
+    }
+    
+    .navbar-brand {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0px 15px;
+        padding: 5px 10px;
+        font-weight: 600;
+        border-radius: 1px;
+        color: #ffffff;
+        transition: all 0.3s ease;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .main-title {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .event-main-title {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .card {
+        width: calc(20% - 20px); /* Adjusted width calculation for responsive grid */
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border: 1px solid #dddddd; /* Added border to make the card box visible */
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card img {
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .card-body {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .card-title {
+        margin-top: 10px;
+        font-size: 18px;
+        color: #333333;
+    }
+    
+    .view-btn a {
+        display: inline-block;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    .view-btn a:hover {
+        background-color: #0056b3;
+    }
+    
+    hr {
+        margin: 40px 0;
+        border: none;
+        border-top: 1px solid #ccc;
+    }
+    
     </style>
 </head>
 <body>
-        <!-- nav section  -->
-        <section class="bar">
-            <nav class="navbar navbar-expand-lg" style="background-color: #000000; height: 80px;">
-                <div class="container-fluid d-flex justify-content-center align-items-center">
-                    <a class="navbar-brand" href="#" style="color: #ffffff; font-size: 30px; font-weight: bolder;">Expo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#" style="margin: 0px 15px; padding: 5px 10px; font-weight: 600; border-radius: 1px; color: #ffffff;">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#" style="margin: 0px 15px; padding: 5px 10px; font-weight: 800; border-radius: 1px; color: #ffffff;">Event</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#" style="margin: 0px 15px; padding: 5px 10px; font-weight: 600; border-radius: 1px; color: #ffffff;">Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#" style="margin: 0px 15px; padding: 5px 10px; font-weight: 600; border-radius: 1px; color: #ffffff;">About team</a>
-                            </li>
-                        </ul>
-                    </div>
+    <!-- Navbar Section -->
+    <section class="bar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <a class="navbar-brand" href="#">Expo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About team</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </section>
+            </div>
+        </nav>
+    </section>
 
+    <!-- Main Title Section -->
     <section class="main-title">
         <h1>Events</h1>
-    </section> 
+    </section>
 
+    <!-- Day 1 Events Section -->
     <section>
         <div class="event-main-title">
             <h4>DAY - 1:</h4>
         </div>
         <div class="row">
-            <div class="card" style="width: 18rem;">
-                <img src="assets/images/images.png" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="assets/images/images.png" class="card-img-top" alt="Event Image">
                 <div class="card-body">
-                  <div class="card-title">
-                    <h4>Calligraphy</h4>
-                  </div>
-                  <p class="card-text">Date: 09-07-2024<br>Timing: 00:00</p>
-                  <div class="view-btn">
-                    <a href="">View More</a>
-                  </div>
+                    <div class="card-title">
+                        <h4>Calligraphy</h4>
+                    </div>
+                    <div class="view-btn">
+                        <a href="/events/calligraphy.html">View More</a>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-              <div class="card" style="width: 18rem;">
-                <img src="assets/images/images.png" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="assets/images/images.png" class="card-img-top" alt="Event Image">
                 <div class="card-body">
-                  <div class="card-title">
-                    <h4>Essay Writing</h4>
-                  </div>
-                  <p class="card-text">Date: 09-07-2024<br>Timing: 00:00</p>
-                  <div class="view-btn">
-                    <a href="">View More</a>
-                  </div>
+                    <div class="card-title">
+                        <h4>Essay Writing</h4>
+                    </div>
+                    <div class="view-btn">
+                        <a href="/events/essay-writing.html">View More</a>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-              <div class="card" style="width: 18rem;">
-                <img src="assets/images/images.png" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="assets/images/images.png" class="card-img-top" alt="Event Image">
                 <div class="card-body">
-                  <div class="card-title">
-                    <h4>Extempose</h4>
-                  </div>
-                  <p class="card-text">Date: 09-07-2024<br>Timing: 00:00</p>
-                  <div class="view-btn">
-                    <a href="">View More</a>
-                  </div>
+                    <div class="card-title">
+                        <h4>Extempore</h4>
+                    </div>
+                    <div class="view-btn">
+                        <a href="/events/extempore.html">View More</a>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-              <div class="card" style="width: 18rem;">
-                <img src="assets/images/images.png" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="assets/images/images.png" class="card-img-top" alt="Event Image">
                 <div class="card-body">
-                  <div class="card-title">
-                    <h4>Extempose</h4>
-                  </div>
-                  <p class="card-text">Date: 09-07-2024<br>Timing: 00:00</p>
-                  <div class="view-btn">
-                    <a href="">View More</a>
-                  </div>
+                    <div class="card-title">
+                        <h4>Collage Making</h4>
+                    </div>
+                    <div class="view-btn">
+                        <a href="/events/collage-making.html">View More</a>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-              <div class="card" style="width: 18rem;">
-                <img src="assets/images/images.png" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="assets/images/images.png" class="card-img-top" alt="Event Image">
                 <div class="card-body">
-                  <div class="card-title">
-                    <h4>Collage Making</h4>
-                  </div>
-                  <p class="card-text">Date: 09-07-2024<br>Timing: 00:00</p>
-                  <div class="view-btn">
-                    <a href="">View More</a>
-                  </div>
+                    <div class="card-title">
+                        <h4>Artistic Expression</h4>
+                    </div>
+                    <div class="view-btn">
+                        <a href="/events/artistic-expression.html">View More</a>
+                    </div>
                 </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="assets/images/images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <div class="card-title">
-                    <h4>Artistic Expression</h4>
-                  </div>
-                  <p class="card-text">Date: 09-07-2024<br>Timing: 00:00</p>
-                  <div class="view-btn">
-                    <a href="">View More</a>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-
-          <hr>
-
-
-
+            </div>
+        </div>
+        <hr>
     </section>
+
+    <!-- Day 2 Events Section -->
+    <section>
+        <div class="event-main-title">
+            <h4>DAY - 2:</h4>
+        </div>
+        <div class="row">
+            <div class="card">
+                <img src="assets/images/images.png" class="card-img-top" alt="Event Image">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Flower Arrangement (Pookalam)</h4>
+                    </div>
+                    <div class="view-btn">
+                        <a href="/events/pookalam.html">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/images.png" class="card-img-top" alt="Event Image">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Rangoli</h4>
+                    </div>
+                    <div class="view-btn">
+                        <a href="/events/rangoli.html">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/images.png" class="card-img-top" alt="Event Image">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Paper Dressing</h4>
+                    </div>
+                    <div class="view-btn">
+                        <a href="/events/paper-dressing.html">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/images.png" class="card-img-top" alt="Event Image">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Hair Style & Makeup</h4>
+                    </div>
+                    <div class="view-btn">
+                        <a href="/events/hair-makeup.html">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/images.png" class="card-img-top" alt="Event Image">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Mehendi</h4>
+                    </div>
+                    <div class="view-btn">
+                        <a href="/events/mehendi.html">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
