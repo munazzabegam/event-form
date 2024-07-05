@@ -14,83 +14,77 @@
     
     <title>Events</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .main-title {
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .event-main-title {
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .row {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-bottom: 40px;
-    }
-    
-    .card {
-        width: calc(20% - 20px);
-        margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        border: 1px solid #dddddd;
-        overflow: hidden;
-        border-radius: 10px;
-    }
-    
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-    
-    .card img {
-        height: 200px;
-        object-fit: cover;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    
-    .card-body {
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .card-title {
-        margin-top: 10px;
-        font-size: 18px;
-        color: #333333;
-    }
-    
-    .view-btn a {
-        display: inline-block;
-        background-color: #007bff;
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        width: 100%;
-    }
-    
-    .view-btn a:hover {
-        background-color: #0056b3;
-    }
-    
-    hr {
-        margin: 40px 0;
-        border: none;
-        border-top: 1px solid #ccc;
-    }
-    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .event-main-title {
+            padding: 20px;
+            text-decoration-line: underline;
+        }
+
+        .event-main-title h2 {
+            font-weight: 800px;
+            font-size: 18px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            width: calc(20% - 20px);
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #dddddd;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            height: 280px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333333;
+        }
+
+        .card-title a {
+            color: #333333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .card-title a:hover {
+            color: #007bff;
+        }
+
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
@@ -119,15 +113,10 @@
         </nav>
     </section>
 
-    <!-- Main Title Section -->
-    <section class="main-title">
-        <h1>Events</h1>
-    </section>
-
     <!-- Day 1 Events Section -->
     <section>
         <div class="event-main-title">
-            <h4>DAY - 1:</h4>
+            <h4>DAY - 1: INNOVATION IN ART</h4>
         </div>
         <div class="row">
             <div class="card">
@@ -181,7 +170,7 @@
     <!-- Day 2 Events Section -->
     <section>
         <div class="event-main-title">
-            <h4>DAY - 2:</h4>
+            <h4>DAY - 2: BEAUTY IN BLOOM</h4>
         </div>
         <div class="row">
             <div class="card">
@@ -190,8 +179,6 @@
                     <div class="card-title">
                         <a href="/events/pookalam.html">Flower Arrangement (Pookalam)</a>
                     </div>
-                    <div class="view-btn">
-                    </div>
                 </div>
             </div>
 
@@ -199,7 +186,6 @@
                 <img src="assets/images/poster.jpeg" class="card-img-top" alt="Event Image">
                 <div class="card-body">
                     <div class="card-title">
-                        <h4>Rangoli</h4>
                         <a href="/events/rangoli.html">Rangoli</a>
                     </div>
                 </div>
@@ -227,7 +213,7 @@
                 <img src="assets/images/poster.jpeg" class="card-img-top" alt="Event Image">
                 <div class="card-body">
                     <div class="card-title">
-                        <a href="/events/mehendi.html">View More</a>
+                        <a href="/events/mehendi.html">Mehendi</a>
                     </div>
                 </div>
             </div>
