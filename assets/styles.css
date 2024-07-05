@@ -2,9 +2,9 @@
     --primary-color: #ffffff;
     --secondary-color: #000000;
     --background-color: #f9f9f9;
-    --text-color: rgb(102, 102, 102);
-    --text-secondary-color: rgb(177, 172, 172);
-    --shadow-color: rgba(0, 0, 0, 0.1);
+    --text-color: rgb(0, 0, 0);
+    --text-secondary-color: rgb(69, 66, 66);
+    --shadow-color: #ffffff78;
 }
 
 body {
@@ -52,18 +52,17 @@ canvas {
 
 /* home section  */
 .home-section {
+    align-items: center;
+    z-index: 2;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 999;
-    position: relative;
     margin-top: 10%;
-    
 }
 
 .home {
     text-align: center;
-    background-color: var(--background-color);
+    background-color: #ffffff90;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--shadow-color);
@@ -80,15 +79,14 @@ canvas {
     font-size: 1em;
     color: var(--text-secondary-color);
     padding-bottom: 6px;
-    /* line-height: 1.5; */
 }
 
 .home-section .home .home-btn a {
     text-decoration: none;
     padding: 12px 24px;
-    background-color: #ffe65a;
+    background-color: #000000;
     border-radius: 9px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 
