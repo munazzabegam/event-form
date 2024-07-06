@@ -4,6 +4,9 @@ html {
 }
  
 @media (max-width: 780px) {
+  #particles-js{
+    z-index: -2;
+  }
   .home {
     width: 90vw;
   }
