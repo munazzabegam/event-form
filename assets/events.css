@@ -10,7 +10,9 @@
 body {
     font-family: Arial, sans-serif;
     font: normal 75% Arial, Helvetica, sans-serif;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    /* background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
+    /* background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83)); */
     margin: 0;
     padding: 0;
 }
