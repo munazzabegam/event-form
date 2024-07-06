@@ -2,8 +2,8 @@
     --primary-color: #ffffff;
     --secondary-color: #000000;
     --background-color: #f9f9f9;
-    --text-color: rgb(0, 0, 0);
-    --text-secondary-color: rgb(69, 66, 66);
+    --text-color: rgb(255, 255, 255);
+    --text-secondary-color: rgb(219, 216, 216);
     --shadow-color: #ffffff78;
 }
 
@@ -21,7 +21,11 @@ canvas {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+    /* background: radial-gradient(circle at center, pink, black); */
+    /* background-image: linear-gradient(-135deg, #FF5F9E, #ffc8dc,#B3005E); */
+    /* background-image: linear-gradient(-135deg,#c12478 , #270524,#c12478); */
+    background: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
     background-position: 50% 50%;
     z-index: -1;
 }
@@ -59,7 +63,7 @@ canvas {
 
 .home {
     text-align: center;
-    background-color: #ffffff99;
+    background-color: #00000080;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--shadow-color);
@@ -97,7 +101,7 @@ footer {
     padding: 8px 20px;
     color: var(--secondary-color);
     text-align: center;
-    background: #ffffff99;
+    background: #00000080;
 }
 
 .footer-section {
