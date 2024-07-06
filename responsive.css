@@ -1,0 +1,47 @@
+body,
+html {
+  overflow-x: hidden;
+}
+ 
+@media (max-width: 780px) {
+  .home {
+    width: 90vw;
+  }
+  .home h1 {
+    font-size: 17px !important;
+  }
+  .home p {
+    text-align: justify;
+    font-size: 15px;
+  }
+  .navbar {
+    z-index: 999;
+    background: black !important;
+  }
+  .navbar-collapse {
+    background: black !important;
+  }
+  .navbar-toggler {
+    background: white;
+  }
+  .carousel {
+    height: 50vh;
+  }
+  .carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+  }
+  .event-main-title h4 {
+    font-size: 17px !important;
+  }
+  .row{
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .card{
+    min-width: 90vw !important;
+  }
+}
+
+
+

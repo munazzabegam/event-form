@@ -122,17 +122,19 @@ body {
 }
 
 .reg-btn a {
-    background-color: #007bff;
+    background-color: #100a3b;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    border: 2px solid #100a3b;
     transition: background-color 0.3s ease;
 }
 
 .reg-btn a:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .container-fluid {
