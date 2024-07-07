@@ -63,8 +63,8 @@ canvas {
 
 .home {
     text-align: center;
-    background-color: #00000080;
-    padding: 30px;
+    background-color: #00000042;
+    padding: 35px;
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--shadow-color);
     width: 65vw;
@@ -92,10 +92,11 @@ canvas {
     border-radius: 9px;
     color: var(--primary-color);
     margin-top: 10px;
+    border: 2px solid #ffffff;
+
 }
 
 .home-section .home .home-btn a:hover{
-    border: 2px solid #ffffff;
     background-color: #000000;
 }
 
