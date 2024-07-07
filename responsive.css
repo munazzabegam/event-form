@@ -4,9 +4,9 @@ html {
 }
 
 @media (max-width: 780px) {
-  /* #particles-js {
-    z-index: 1;
-  } */
+  #particles-js {
+    /* z-index: 1; */
+  }
   .home {
     width: 90vw;
   }
@@ -66,6 +66,7 @@ html {
 
 
 }
+
 
 .card-body{
 background-image: radial-gradient(circle, rgb(60, 2, 85),  rgb(255, 255, 255)) !important;
