@@ -25,7 +25,7 @@ html {
     background: black !important;
   }
   .navbar-toggler {
-    background: white;
+    background: white !important;
   }
   .carousel {
     height: 50vh;
