@@ -1,3 +1,44 @@
+.abt {
+  width: 100%;
+  height: 90vh;
+  display: flex;justify-content: center !important;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.about-wie {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 30vh;
+}
+
+
+.card {
+  display: flex;
+  justify-content: center;
+  background-color: #00000054 !important;
+  height: 120vh;
+  width: 90vw;
+
+}
+
+.card p {
+  color: #b0afaf;
+}
+
+.card-title {
+  font-size: 2rem;margin-bottom: 40px;display:flex;justify-content:center;font-weight: bolder;
+}
+
+.card-title h4 {
+  color: #ffffff;
+}
+
+
+
 .team-title {
   display: flex;justify-content:center; 
   color: #ffffff;
@@ -77,32 +118,114 @@
   flex-direction: column;
 }
 
-.coordinators .co-title {
-  display: flex;justify-content:center; 
-  color: #ffffff;
-}
 
 
-.coordinators .co-title h4 {
-  font-weight: bolder;
-  font-size: larger;
-}
-
-
-
-.card {
+.contact-us{
+  min-height: 90vh;
   display: flex;
+  align-items: center;
   justify-content: center;
-  background-color: #00000054 !important;
-  height: 70vh;
-  width: 50vw;
-
 }
 
-.card p {
-  color: #ffffff;
+.contact-page{
+  width: 100%;
+  max-width: 1400px;
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.card-title {
-  font-size: 2rem;margin-bottom: 40px;display:flex;justify-content:center;font-weight: bolder
+h2{
+  width: 100%;
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+  color: rgb(98, 215, 205) !important;
+  /* font-weight: bolder !important; */
 }
+
+.contact-info, .contact-form{
+  flex: 1;
+}
+
+
+.item{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.item p span {
+  color: rgb(172, 170, 170);
+}
+
+.contact-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.textb{
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+textarea{
+  width: 100%;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.btn{
+  width: 120px;
+  height: 40px;
+  margin-left: auto;
+  background-color: #3494db !important;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #3494db !important;
+  transition: .3s linear;
+  margin-top: 4px;
+}
+
+.btn:hover{
+  background-color: transparent !important;
+  border: 2px solid #000000 !important;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 980px){
+  .contact-page{
+    max-width: 800px;
+  }
+  h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .contact-info, .contact-form{
+    flex: 100%;
+    margin-bottom: 30px;
+  }
+  .textb{
+    width: 100%;
+  }
+}
+
+
+
+
