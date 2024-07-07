@@ -31,7 +31,7 @@ html {
     height: 50vh;
   }
   .carousel-item img {
-    /* height: vh; */
+    height: 50vh;
     object-fit: cover;
   }
   .event-main-title h4 {
