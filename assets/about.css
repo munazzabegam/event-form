@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  height: 30vh;
+  height: 25vh;
 }
 
 
@@ -20,11 +20,16 @@
   display: flex;
   justify-content: center;
   background-color: #00000054 !important;
-  height: 120vh;
-  width: 90vw;
-
+  height: 140vh;
+  width: 80vw;
 }
 
+.card-body {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+
+
+}
 .card p {
   color: #b0afaf;
 }
@@ -172,7 +177,7 @@ h2{
   padding: 12px;
   background-color: rgb(255, 255, 255);
   border: none;
-  color: #fff;
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
 }
 
@@ -184,7 +189,7 @@ textarea{
   padding: 12px;
   background-color: rgb(255, 255, 255);
   border: none;
-  color: #fff;
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
 }
 
@@ -271,8 +276,16 @@ textarea{
     flex-direction: column;
   }
   .card {
-    min-width: 90vw !important;
-    min-height: 60vh;
+    min-width: 60vw !important;
+    min-height: 50vh;
+  }
+/* 
+  .card-body {
+    height: 20vh !important;
+  } */
+
+  .contact-info {
+    margin-bottom: 60px !important;
   }
   .ev-btn {
     display: flex;
