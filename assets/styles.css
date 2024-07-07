@@ -48,6 +48,11 @@ canvas {
 
 .nav-item a:hover{
     border-bottom: 2px solid var(--primary-color);
+    transition: 0.2s;
+}
+.active{
+    border-bottom: 2px solid var(--primary-color) !important;
+
 }
 
 /* home section  */
@@ -103,7 +108,7 @@ canvas {
 /* footer section  */
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     padding: 8px 20px;
