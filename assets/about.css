@@ -275,9 +275,14 @@ textarea{
     display: flex;
     flex-direction: column;
   }
+
+.abt{
+height: 50vh;
+margin-bottom: 10vh;
+}
   .card {
     min-width: 60vw !important;
-    min-height: 50vh;
+    min-height: 60vh;
   }
 /* 
   .card-body {
@@ -306,6 +311,14 @@ textarea{
   .posterImg img {
     width: 90vw !important;
   }
+
+.about-us {
+  margin-top: 200px;
+}
+
+.scroll a {
+margin-top: 35vh;
+}
 
 }
 
