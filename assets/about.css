@@ -279,8 +279,10 @@ textarea{
   }
 
 .abt{
-height: 50vh;
-margin-bottom: 10vh;
+  height: 40vh;
+  margin-top: 20vh;
+  margin-bottom: -20vh;
+
 }
   .card {
     min-width: 60vw !important;
